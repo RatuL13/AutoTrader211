@@ -1,0 +1,55 @@
+<%- include ("../partials/header") %>
+<br> 
+<div class="container">
+    <div class="row">
+        <div style="width:30%; margin: 25px auto;">
+            <h1>Checkout</h1>
+            <br>
+            <h4>Your Total: Rs.<%=totalPrice%></h4>
+            <div id="charge-error" class=" <% if(noError){%> d-none <% } %>">
+            <%= errMsg %>
+            </div>
+        <form action="/checkout" method="POST" style="position: relative; top: 10px;" id="checkout-form">
+            <div class="form-group">
+              <label for="name" id="aante">Name</label>
+                <input class="form-control"type="text" placeholder="name" name="name" id="name">
+            </div>
+  <div class="form-group">
+    <label for="address">Address</label>
+      <input class="form-control" type="text" name="address" placeholder="address"id="address">
+  </div>
+  <div class="form-group">
+    <label for="cardHolderName">Card Holder Name</label>
+    <input class="form-control"type="text" placeholder="Card Holder Name" name="cardHolderName"id="card-name">
+</div>
+<div class="form-group">
+    <label for="creditCardNumber">Credit Card Number</label>
+      <input class="form-control" type="text" name="creditCardNumber" placeholder="Credit Card Number"id="card-number">
+  </div>
+  <div class="form-group">
+      <div class="row">
+      <div class="col-sm-6">
+    <label for="expirationMonth">Expiration Month</label>
+      <input class="form-control" type="text" name="expirationMonth" placeholder="Expiration Month"id="card-expiry-month">
+  </div>
+
+  <div class="col-sm-6">
+    <label for="expirationYear">Expiration Year</label>
+      <input class="form-control" type="text" name="expirationYear" placeholder="Expiration Year"id="card-expiry-year">
+  </div>
+  </div>
+  </div>
+  <div class="form-group">
+    <label for="cvc">CVC</label>
+      <input class="form-control" type="text" name="cvc" placeholder="CVC"id="card-cvc">
+  </div>
+
+     <div class="form-group">
+        <button class="btn btn-lg btn-primary btn-block">Buy Now</button>
+      </div>    
+    </form>
+    <br>
+    </div>    
+    </div>
+</div>
+<%- include ("../partials/footer") %>

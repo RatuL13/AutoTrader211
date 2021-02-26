@@ -1,0 +1,229 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+html {
+    position: relative;
+    min-height: 100%;
+}
+/*footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px; 
+    color: white;
+}*/
+body {
+    height: 100%;
+    margin-bottom: 100px;
+    padding: 0px;
+    margin: 0px;
+}
+.autoTrader-content{
+    margin-left: 10rem;
+    width: 50em;
+    height: 350px;
+    display: block;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top: 150px;
+    color: #666;
+    position: relative;
+}
+nav{
+    /*background-color:rgb(49, 60, 83); */
+    background-color: #f7f9fc;
+}
+
+footer{
+    background-color: rgb(49, 60, 83);
+    color:#fff;
+    height: 500px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+}
+.inner{
+    margin: 0px 12px;
+    padding: 0px 8px;
+}
+.footerContent{
+    list-style-type: none;
+    position: relative;
+    right: 2.5rem;
+    font-size: 0.75rem;
+    line-height: 2rem;
+}
+footer .footer-content{
+  display: flex;
+}
+footer .footer-content .footer-section{
+    flex: 1;
+    padding: 40px 85px;
+}
+
+.card-img{
+    padding-right:0.5px;
+}
+#delete-form{
+    display: inline-block;
+}
+.jumbotron{
+    //margin-top: -50px;
+}
+.filter{
+    background-color: white;
+    height: 300px;
+    border-radius: 8px;
+    left: 46px;
+    max-width: 300px;
+}
+.searchForm{
+    text-align: left;
+    padding-top: 15px;
+    font-size: 1.625em;
+}
+.searchField{
+    margin-top: 10px;
+    max-width: 130px;
+    height: 30px;
+    position: relative;
+    left: 0.5px;
+    bottom: 25px;
+}
+#distances{
+    margin-top: 10px;
+    max-width: 130px;
+    height: 30px;
+    position: relative;
+    right: 5px;
+    bottom: 25px;
+}
+#make{
+    margin-top: 10px;
+    max-width: 230px;
+    height: 30px;
+    position: relative;
+    right: 5px;
+    bottom: 13px;
+}
+#model{
+    margin-top: 10px;
+    max-width: 230px;
+    height: 30px;
+    position: relative;
+    left: 0.5rem;
+    bottom: 13px;
+}
+#minPrice{
+    margin-top: 5px;
+    max-width: 130px;
+    height: 30px;
+    position: relative;
+    left: 0.5px;
+    bottom: 23px;
+}
+#maxPrice{
+    margin-top: 10px;
+    max-width: 130px;
+    height: 30px;
+    position: relative;
+    right: 6px;
+    bottom: 28px;
+}
+#searchBtn{
+    position: relative;
+    bottom: 80px;
+}
+.checked {
+    color: orange;
+}
+#moreOptions{
+    position: relative;
+    left: 170px;
+    bottom: 73px;
+}
+#filterHead{
+    line-height: 2px;
+    font-weight: 200
+}
+.field-panel{
+    padding: 16px 26px 8px;
+    margin: 0 0 48px;
+    border: 1px solid #d1d0cf;
+}
+.field-panel_legend{
+    color: #242d3d;
+    padding: 0 8px;
+    margin-left: -8px;
+}
+#legend_content{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: "ATFabriga",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;  
+    margin-left: 5px; 
+    margin-right: 5px;        
+}
+legend{
+    width: initial;
+}
+fieldset{
+    width: 20rem;
+}
+.atds-type-mini{
+    font-size: .75rem;
+    line-height: 1.33333;
+    font-weight: 400;
+    font-family: "ATFabriga",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+.search-form{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+/*.search-form__field-wrapper {
+    margin: 0;
+    width: calc(50% - 8px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+/*.atds-field__selection .atds-field__label {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    transition: all .25s ease-in-out;
+}
+.atds-field__selection .atds-field__input {
+    position: absolute;
+    opacity: 0;
+    height: 24px;
+    width: 24px;
+}
+.atds-field__selection .atds-field__toggle {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 24px;
+    margin-right: 12px;
+    height: 24px;
+    position: relative;
+    flex-shrink: 0;
+}*/
+.field-panel-right{
+    padding: 16px 26px 8px;
+    margin: 0 0 48px;
+    border: 1px solid #d1d0cf;
+    position: relative;
+    left: 50px;
+    top: 30px;
+    width: 80%;
+    height: 250px;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+}

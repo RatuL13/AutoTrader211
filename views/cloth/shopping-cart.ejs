@@ -1,0 +1,47 @@
+<%- include ("../partials/header") %>
+<br> <br>
+<div class="container">
+<div class="row">
+  <%if (products!=null) { %>
+    <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+      <div style="position: relative; left: 250px;">
+        <ul class="list-group">
+          <% for(var i=0;i< products.length;i++) { %>
+            <li class="list-group-item">
+                <span class="badge badge-primary pull-right"><%= products[i].qty %></span>
+                <strong><%= products[i].item.title %></strong>
+                <span class="btn btn-success">Rs.<%= products[i].price %></span>
+                <div class="btn-group">
+                <button class="btn btn-primary btn-xs dropdown-toggle" type="button" data-toggle="dropdown">Action<span class="caret"></span></button>
+               <ul class="dropdown-menu">
+                   <li><a href="#"><center style="color: black;">Reduce by 1</center></a></li>
+                   <li><a href="#"><center style="color: black;">Remove All</center></a></li>
+                  </ul>
+            </div>
+            </li>
+            <% } %>
+        </ul>
+        </div>
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-4">
+          <strong>Total :Rs.<%=totalPrice %></strong>   
+        </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <a href="/checkout" type="button" class="btn btn-success">Checkout</a>
+            </div>
+            </div>
+            <div class="row"> 
+            <% } else { %>
+              <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+                  <h2 style="position: relative; left: 480px; top: 100px">No items in Cart</h2>
+                </div>
+            <% } %> 
+          </div>    
+          </div>
+<%- include ("../partials/footer") %>

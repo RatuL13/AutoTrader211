@@ -1,0 +1,30 @@
+<%- include ("../partials/header") %>
+<div class="container">
+    <div class="row">
+        <div style="width:30%; margin: 25px auto;">
+            <h1><center>Login</center></h1>
+        <form action="/user/signin" method="POST" style="position: relative; top: 10px;">
+            <div class="form-group">
+              <label for="name">User-Name</label>
+                <input class="form-control"type="text" placeholder="username" name="username" id="name">
+            </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+      <input class="form-control" type="email" name="email" placeholder="email"id="email">
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input class="form-control"type="password" placeholder="password" name="password"id="password">
+</div>
+     <div class="form-group">
+        <button class="btn btn-lg btn-primary btn-block">Sign In</button>
+      </div>    
+    </form>
+    <br>
+    <div class="col-md-12">
+      <center>Don't Have an account? <a href="/user/signup">Sign Up</a></center>
+    </div>
+    </div>    
+    </div>
+</div>
+<%- include ("../partials/footer") %>
